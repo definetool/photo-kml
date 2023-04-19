@@ -1,0 +1,7 @@
+<Folder>
+	<name>{name}</name>
+	<open>{open}</open>
+	{folders}
+	{placemarks}
+</Folder>
+

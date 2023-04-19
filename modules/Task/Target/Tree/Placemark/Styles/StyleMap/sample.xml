@@ -1,0 +1,46 @@
+<StyleMap id="{id}">
+	<Pair>
+		<key>normal</key>
+		<styleUrl>#{id}-normal</styleUrl>
+	</Pair>
+	<Pair>
+		<key>highlight</key>
+		<styleUrl>#{id}-highlight</styleUrl>
+	</Pair>
+</StyleMap>
+<Style id="{id}-normal">
+	<IconStyle>
+		<scale>{iconScale}</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/{iconType}.png</href>
+		</Icon>
+		<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LabelStyle>
+		<color>{labelColor}</color>
+		<scale>{labelScale}</scale>
+	</LabelStyle>
+	<ListStyle>
+		<ItemIcon>
+			<href>http://maps.google.com/mapfiles/kml/{iconType}-lv.png</href>
+		</ItemIcon>
+	</ListStyle>
+</Style>
+<Style id="{id}-highlight">
+	<IconStyle>
+		<scale>{iconScale2}</scale>
+		<Icon>
+			<href>http://maps.google.com/mapfiles/kml/{iconType}.png</href>
+		</Icon>
+		<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+	</IconStyle>
+	<LabelStyle>
+		<color>{labelColor}</color>
+		<scale>{labelScale2}</scale>
+	</LabelStyle>
+	<ListStyle>
+		<ItemIcon>
+			<href>http://maps.google.com/mapfiles/kml/{iconType}-lv.png</href>
+		</ItemIcon>
+	</ListStyle>
+</Style>

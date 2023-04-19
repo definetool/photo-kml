@@ -1,0 +1,32 @@
+{
+  "name": "@definetool/photo-kml",
+  "version": "1.0.3",
+  "description": "批量抽取照片中的 GPS 信息以生成可以显示在 Google 地球中的 KML 文件。",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "micty",
+  "email": "mictydeng@qq.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/definetool/photo-kml.git"
+  },
+  "dependencies": {
+    "@definejs/date": "^1.1.0",
+    "@definejs/directory": "^2.0.4",
+    "@definejs/emitter": "^1.1.0",
+    "@definejs/file": "^2.0.1",
+    "@definejs/lines": "^1.0.0",
+    "@definejs/path": "^2.0.1",
+    "@definejs/patterns": "^1.0.2",
+    "@definejs/string": "^1.0.0",
+    "@definejs/tasker": "^1.0.2",
+    "@definejs/timer": "^1.0.1",
+    "@definejs/tree": "^1.0.5",
+    "@webpart/console": "^2.1.0",
+    "colors": "^1.4.0",
+    "exif": "^0.6.0",
+    "progress": "^2.0.3"
+  }
+}

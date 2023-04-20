@@ -8,17 +8,22 @@ module.exports = {
 
     render({ node, dir, file$info, each, }) { 
         let file = node.keys.join('/');
+        let dirname = node.keys.slice(-2, -1)[0];
         let name = node.keys.slice(-1)[0];
         let info = file$info[file];
         let src = `${dir}${file}`;
+        let title = `${dirname || info.date}@${info.time}`; //鼠标悬停在图片上出现的提示信息。
+
         let sample = Sample.get();
 
         let data = each(node, {
             sample,
             file,
+            dirname,
             name,
             info,
             src,
+            title,
         });
 
         if (typeof data == 'string') {
@@ -37,6 +42,7 @@ module.exports = {
         let xml = $String.format(sample, {
             name,
             src,
+            title,
             styleId,
             longitudeNumber,
             latitudeNumber,

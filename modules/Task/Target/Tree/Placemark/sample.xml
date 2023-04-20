@@ -1,6 +1,6 @@
 <Placemark>
 	<name>{name}</name>
-	<description><![CDATA[<img style="max-width:{maxWidth}px;" src="file:///{src}">]]></description>
+	<description><![CDATA[<img style="max-width:{maxWidth}px;" src="file:///{src}" title="{title}">]]></description>
 	<styleUrl>#{styleId}</styleUrl>
 	<Point>
 		<gx:drawOrder>1</gx:drawOrder>

@@ -7,7 +7,8 @@ let icons = [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'.split(''), '10'];
 let task = new Task({
     output: './output/',
     source: {
-        dir: '/Users/micty/Pictures/2022云南四川自驾游',
+        // dir: '/Users/micty/Pictures/2022云南四川自驾游',
+        dir: '/Volumes/3/照片与视频/iPhone/2014/2014骑行',
         patterns: [
             '**/*.jpg',
             '**/*.JPG',

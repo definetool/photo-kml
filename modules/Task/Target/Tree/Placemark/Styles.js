@@ -1,8 +1,11 @@
 
 
+const $Object = require('@definejs/object');
 const StyleMap = require('./Styles/StyleMap');
 
 let id$xml = {};
+
+let key$item = {};
 
 
 module.exports = exports = {
@@ -21,20 +24,24 @@ module.exports = exports = {
         config = Object.assign({}, exports.defaults, config);
 
         let { iconType, iconScale, labelColor, labelScale, } = config;
-        let name = iconType.split('/').join('_');
-        let id = `style-${name}-${iconScale}-${labelColor}-${labelScale}`;
-        let xml = id$xml[id];
+        let key = JSON.stringify({ iconType, iconScale, labelColor, labelScale, });
+        let item = key$item[key];
 
-        if (!xml) {
-            xml = id$xml[id] = StyleMap.render({
+
+        if (!item) {
+            let id = Object.keys(key$item).length;
+
+            let xml = StyleMap.render({
                 id,
                 iconType,
                 iconScale,
                 labelColor,
                 labelScale,
             });
+
+            item = key$item[key] = { id, xml, };
         }
 
-        return { id, xml, };
+        return item;
     },
 };

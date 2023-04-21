@@ -1,6 +1,6 @@
 # @definetool/photo-kml
 
-批量抽取照片中的 GPS 信息以生成可以显示在 Google 地球中的 KML 内容。
+批量抽取照片中的 GPS 信息并生成可以导入到 Google 地球中的 KML 文件。
 
 ### 示例
 

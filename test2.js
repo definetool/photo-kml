@@ -5,7 +5,8 @@ let dates = new Set();
 
 let task = new Task({
     output: './output/',
-    source: '/Volumes/3/照片与视频/THE/证件资料/交通工具/小汽车/加油记录',
+    // source: '/Volumes/3/照片与视频/THE/证件资料/交通工具/小汽车/加油记录',
+    source: '/Volumes/3/照片与视频/iPhone/2014/2014骑行',
 });
 
 

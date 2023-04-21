@@ -1,7 +1,7 @@
 {
   "name": "@definetool/photo-kml",
-  "version": "1.0.4",
-  "description": "批量抽取照片中的 GPS 信息以生成可以显示在 Google 地球中的 KML 文件。",
+  "version": "1.0.5",
+  "description": "批量抽取照片中的 GPS 信息并生成可以导入到 Google 地球中的 KML 文件。",
   "main": "index.js",
   "scripts": {},
   "keywords": [],

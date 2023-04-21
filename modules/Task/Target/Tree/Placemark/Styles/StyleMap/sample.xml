@@ -1,14 +1,14 @@
 <StyleMap id="{id}">
 	<Pair>
 		<key>normal</key>
-		<styleUrl>#{id}-normal</styleUrl>
+		<styleUrl>#{id}-n</styleUrl>
 	</Pair>
 	<Pair>
 		<key>highlight</key>
-		<styleUrl>#{id}-highlight</styleUrl>
+		<styleUrl>#{id}-h</styleUrl>
 	</Pair>
 </StyleMap>
-<Style id="{id}-normal">
+<Style id="{id}-n">
 	<IconStyle>
 		<scale>{iconScale}</scale>
 		<Icon>
@@ -26,7 +26,7 @@
 		</ItemIcon>
 	</ListStyle>
 </Style>
-<Style id="{id}-highlight">
+<Style id="{id}-h">
 	<IconStyle>
 		<scale>{iconScale2}</scale>
 		<Icon>
